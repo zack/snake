@@ -1,0 +1,17 @@
+canvas#snake-field {
+  border: 2px solid black;
+}
+
+#game-container {
+  display: block;
+  margin: 100px auto 0;
+  width: 500px;
+}
+
+#score {
+  float: right;
+}
+
+.instructions {
+  text-align: center;
+}
