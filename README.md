@@ -1,7 +1,8 @@
 Snake
-Zack Youngren
+=====
 
-https://snake.youngren.io
+(A 3 hour coding challenge)
+-------------------------
 
 USAGE:
   * Open index.html in your favorite (preferably modern) web browser, or
