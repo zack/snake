@@ -23,7 +23,7 @@ class Game {
       'up':    ['w', 'W', 'ArrowUp'],
       'left':  ['a', 'A', 'ArrowLeft'],
       'down':  ['s', 'S', 'ArrowDown'],
-      'right': ['d', 'D', 'ArrowRight'],
+      'right': ['d', 'D', 'ArrowRight']
     }
 
     this.initEventBindings();
@@ -45,7 +45,7 @@ class Game {
       food: starting_food,
       pending_direction: 'up',
       running: 1,
-      snake: starting_snake,
+      snake: starting_snake
     };
   }
 
@@ -63,7 +63,7 @@ class Game {
     do
       food = [
         Math.floor(Math.random() * this.GAME_WIDTH),
-        Math.floor(Math.random() * this.GAME_HEIGHT),
+        Math.floor(Math.random() * this.GAME_HEIGHT)
       ];
     while(
       snake.collidesWith(food)
@@ -99,7 +99,7 @@ class Game {
     this.FIELD.fillText(
       go_text,
       this.CANVAS_WIDTH/2 - go_text_width/2,
-      this.CANVAS_HEIGHT/2,
+      this.CANVAS_HEIGHT/2
     );
 
     this.FIELD.font = "15px Helvetica";
@@ -110,7 +110,7 @@ class Game {
     this.FIELD.fillText(
       instr_text,
       this.CANVAS_WIDTH/2 - instr_text_width/2,
-      this.CANVAS_HEIGHT/2 + 15,
+      this.CANVAS_HEIGHT/2 + 15
     );
   }
 
@@ -159,7 +159,7 @@ class Game {
       food: new_food,
       pending_direction: new_dir,
       running: state.running,
-      snake: state.snake,
+      snake: state.snake
     }
   }
 
